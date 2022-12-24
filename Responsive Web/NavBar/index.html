@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Nav</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <span><i class="fa-solid fa-gamepad"></i></span>
+      </div>
+      <div class="links">
+        <ul class="main">
+          <li>Home</li>
+          <li>Team</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+        <i class="fas fa-bars toggle-menu"></i>
+        <ul class="active second">
+          <li>Home</li>
+          <li>Team</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="profile">
+        <span>Hello, John Doe</span>
+        <div class="profile-img">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+          />
+        </div>
+      </div>
+    </nav>
+    <script>
+      const burgerIcon = document.querySelector(".toggle-menu");
+      const dropDown = document.querySelector(".active");
+
+      burgerIcon.addEventListener("click", () => {
+        dropDown.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  background-color: rgb(236, 230, 230);
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  gap: 20px;
+  padding: 10px;
+  width: 70vh;
+  background-color: rgb(236, 230, 230);
+  position: relative;
+}
+
+.message {
+  flex-grow: 4;
+  position: relative;
+  top: -8px;
+}
+
+.message input {
+  width: 90%;
+  padding: 10px;
+  top: 8px;
+  position: relative;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  outline: none;
+  border: none;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+.icons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+i {
+  padding: 2px;
+  color: rgb(60, 142, 235);
+}
+i.fa-face-smile {
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 30px;
+}
+i.fa-thumbs-up {
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 5px;
+}
+@media (max-width: 767px) {
+  main {
+    width: 95vw;
+  }
+}
