@@ -8,15 +8,15 @@
 
 ## responsive_form:
   - [live Demo](https://mohamedyahia831.github.io/ITI-Training/Responsive%20Web/Form/)
-  - [code](https://github.com/MohamedYahia831/ITI-Training/blob/main/Responsive%20Web/Form/index.html)
+  - [code](https://github.com/MohamedYahia831/ITI-Training/blob/main/Responsive%20Web/Form/)
   
   
   ## responsive_nav:
   - [live Demo](https://mohamedyahia831.github.io/ITI-Training/Responsive%20Web/NavBar/index.html)
-  - [code](https://github.com/MohamedYahia831/ITI-Training/blob/main/Responsive%20Web/NavBar/index.html)
+  - [code](https://github.com/MohamedYahia831/ITI-Training/blob/main/Responsive%20Web/NavBar/)
 
 
 ## sending_message:
   - under refactoring to make dynamic chat screen :
   - [live Demo](https://mohamedyahia831.github.io/ITI-Training/Responsive%20Web/InputMessage/index.html)
-  - [code](https://github.com/MohamedYahia831/ITI-Training/blob/main/Responsive%20Web/InputMessage/index.html)
+  - [code](https://github.com/MohamedYahia831/ITI-Training/blob/main/Responsive%20Web/InputMessage/)
