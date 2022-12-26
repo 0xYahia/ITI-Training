@@ -20,6 +20,5 @@
 
 
 ## sending_message:
-  - under refactoring to make dynamic chat screen :
   - [live Demo](https://mohamedyahia831.github.io/ITI-Training/Responsive%20Web/InputMessage/index.html)
   - [code](https://github.com/MohamedYahia831/ITI-Training/blob/main/Responsive%20Web/InputMessage/)
