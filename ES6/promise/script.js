@@ -44,7 +44,7 @@ function createUser(users) {
   });
 }
 
-//////////////////////////////////////////////////////ajax
+//////////////////////////////////////////////////////
 
 /*
   b. When a user tab is clicked display its posts’ titles by requesting the posts from the link below using Ajax ES6 fetch function: 
