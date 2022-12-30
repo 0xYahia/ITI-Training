@@ -54,7 +54,7 @@ Note:
 -	do not get the posts of all users on page load, the user tab must be clicked to request its posts.
 
 */
-
+/*
 let ul2 = document.getElementsByTagName("ul")[0];
 let ulContent = document.getElementsByClassName("content")[0];
 
@@ -87,3 +87,4 @@ async function getPosts(id) {
   });
 }
 getUsers();
+*/
