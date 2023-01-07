@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1667306088 source:d:\laaab4\three employees read and write\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
