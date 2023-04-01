@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1667306229 source:d:\laaab4\read string from user reverse\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

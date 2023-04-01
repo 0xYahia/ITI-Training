@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1667316503 source:d:\laaab4\highlighted_menu_10employees\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<string.h>
+

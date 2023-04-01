@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1667305637 source:d:\laaab4\program to identify key ascii\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
