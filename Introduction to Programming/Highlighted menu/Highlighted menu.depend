@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1667305706 source:d:\laaab4\highlighted menu\main.c
-	<stdio.h>
-	<stdlib.h>
-	<Windows.h>
-	<conio.h>
-
