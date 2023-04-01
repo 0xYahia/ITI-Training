@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1668054061 source:d:\iti 43\6. c++\day5\lab\abagora\main.cpp
+	<iostream>
+	"graphics.h"
+
+1544002460 d:\iti 43\6. c++\day5\lab\abagora\graphics.h
+	<iostream>
+	<math.h>
+	<windows.h>
+	<Windows.h>
+
+1668183371 source:d:\iti43\6.c++\day5\lab\abagora\main.cpp
+	<iostream>
+	"graphics.h"
+
+1544002460 d:\iti43\6.c++\day5\lab\abagora\graphics.h
+	<iostream>
+	<math.h>
+	<windows.h>
+	<Windows.h>
+

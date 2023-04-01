@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1667993307 source:d:\iti 43\6. c++\day5\lab\marw7a\main.cpp
+	<iostream>
+	"graphics.h"
+	<thread>
+	<chrono>
+
+1544002460 d:\iti 43\6. c++\day5\lab\marw7a\graphics.h
+	<iostream>
+	<math.h>
+	<windows.h>
+	<Windows.h>
+
