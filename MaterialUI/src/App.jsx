@@ -1,6 +1,5 @@
 import MuiButtons from "./components/MuiButtons";
 import MuiTypography from "./components/MuiTypography";
-
 const App = () => {
   return (
     <>
