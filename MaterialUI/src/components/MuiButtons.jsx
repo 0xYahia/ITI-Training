@@ -6,6 +6,8 @@ import LoadingButton from "@mui/lab/LoadingButton";
 const MuiButtons = () => {
   return (
     <>
+      <h1>Button</h1>
+
       <Button variant="contained">contained</Button>
       <Button variant="outlined">outlined</Button>
       <Button variant="text">text</Button>
