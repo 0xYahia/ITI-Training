@@ -1,5 +1,8 @@
+import { Button, ButtonGroup } from "@mui/material";
 import Typography from "@mui/material/Typography";
 const MuiTypography = () => {
+  var yahia = 'ahmed'
+yahia
   return (
     <>
       <Typography variant="h1" className="my-color">
@@ -25,6 +28,11 @@ const MuiTypography = () => {
       <Typography variant="overline">overline</Typography>
       <MyTypography component="button">My Typography</MyTypography>
       <hr />
+      <ButtonGroup color="error" variant="contained" orientation="vertical">
+        <Button>left</Button>
+        <Button>center</Button>
+        <Button>Right</Button>
+      </ButtonGroup>
     </>
   );
 };
