@@ -1,10 +1,11 @@
 import { Button, ButtonGroup } from "@mui/material";
 import Typography from "@mui/material/Typography";
 const MuiTypography = () => {
-  var yahia = 'ahmed'
-yahia
+  var yahia = "ahmed";
+  yahia;
   return (
     <>
+      <h1>Typography</h1>
       <Typography variant="h1" className="my-color">
         Headline 1
       </Typography>
