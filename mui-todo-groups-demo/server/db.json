@@ -12,8 +12,8 @@
     }
   ],
   "todos": [
-    { "id": "aa", "titile": "Todo 1", "completed": false, "groupId": 1 },
-    { "id": "bb", "titile": "Todo 2", "completed": true, "groupId": 1 },
-    { "id": "cc", "titile": "Todo 3", "completed": true, "groupId": 2 }
+    { "id": "bb", "titile": "Todo 1", "completed": false, "groupId": 1 },
+    { "id": "cc", "titile": "Todo 2", "completed": true, "groupId": 1 },
+    { "id": "dd", "titile": "Todo 3", "completed": true, "groupId": 2 }
   ]
 }
