@@ -7,7 +7,7 @@ export async function getStaticProps() {
 export default function Home() {
   return (
     <>
-      <ul></ul>
+      <ul>ssadsad</ul>
     </>
   );
 }
