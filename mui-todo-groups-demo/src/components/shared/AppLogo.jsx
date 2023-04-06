@@ -18,8 +18,8 @@ const AppLogo = (props) => {
       <FormatListBulletedIcon sx={{ mr: 1 }} />
       <Typography
         variant="h6"
+        // component="a"
         noWrap
-        component="a"
         href="/"
         sx={{
           mr: 2,

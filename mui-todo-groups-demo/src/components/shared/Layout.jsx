@@ -21,10 +21,10 @@ const Layout = ({ children }) => {
         <GlobalStyles
           styles={{
             a: {
-              color: "white",
+              color: "inherit",
               textDecoration: "none",
               ":hover, :active, :visited": {
-                color: "white",
+                color: "inherit",
               },
             },
           }}
