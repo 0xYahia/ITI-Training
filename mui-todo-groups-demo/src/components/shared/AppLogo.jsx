@@ -1,6 +1,7 @@
 import { Stack, Typography } from "@mui/material";
 import React from "react";
 import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
+import { Link } from "react-router-dom";
 
 const AppLogo = (props) => {
   const { sx } = props;
@@ -8,6 +9,8 @@ const AppLogo = (props) => {
     <Stack
       sx={sx}
       direction="row"
+      component={Link}
+      to="/"
       alignItems="center"
       justifyContent={{ xs: "center", md: "flex-start" }}
       flex={{ xs: 1, md: 0 }}

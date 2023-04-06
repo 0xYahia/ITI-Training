@@ -1,0 +1,19 @@
+{
+  "todo-groups": [
+    {
+      "id": 1,
+      "titile": "Todo group 1",
+      "description": "This is the description of todo group 1"
+    },
+    {
+      "id": 2,
+      "titile": "Todo group 2",
+      "description": "This is the description of todo group 2"
+    }
+  ],
+  "todos": [
+    { "id": "aa", "titile": "Todo 1", "completed": false, "groupId": 1 },
+    { "id": "bb", "titile": "Todo 2", "completed": true, "groupId": 1 },
+    { "id": "cc", "titile": "Todo 3", "completed": true, "groupId": 2 }
+  ]
+}

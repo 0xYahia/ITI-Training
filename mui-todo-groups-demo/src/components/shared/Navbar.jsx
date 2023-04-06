@@ -6,7 +6,13 @@ import Button from "@mui/material/Button";
 import AppLogo from "./AppLogo";
 import BurgerIconButton from "./BurgerIconButton";
 import { Link } from "react-router-dom";
-import { Drawer } from "@mui/material";
+import {
+  Drawer,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+} from "@mui/material";
 import { useState } from "react";
 
 const navLinks = [
@@ -41,7 +47,21 @@ function Navbar() {
         </Container>
       </AppBar>
       <Drawer open={drawerOpen} onClose={() => setDrawerOpen(false)}>
-        <Box minWidth={250}></Box>
+        <Box minWidth={250}>
+          <List>
+            {navLinks.map(({ label, to }) => (
+              <ListItem key={label}>
+                <ListItemButton
+                  component={Link}
+                  to={to}
+                  onClick={() => setDrawerOpen(false)}
+                >
+                  <ListItemText>{label}</ListItemText>
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+        </Box>
       </Drawer>
     </>
   );
