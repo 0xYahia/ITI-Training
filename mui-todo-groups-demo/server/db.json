@@ -2,18 +2,20 @@
   "todo-groups": [
     {
       "id": 1,
-      "titile": "Todo group 1",
+      "title": "Todo group 1",
+      "imgSrc": "https://img.freepik.com/free-photo/green-field-tree-blue-skygreat-as-backgroundweb-banner-generative-ai_1258-153069.jpg?w=1380&t=st=1680853964~exp=1680854564~hmac=b6352e77f60d81c0337300c7f6ec3f57a64524b358692fee94e51c01fd9e5945",
       "description": "This is the description of todo group 1"
     },
     {
       "id": 2,
-      "titile": "Todo group 2",
+      "title": "Todo group 2",
+      "imgSrc": "https://img.freepik.com/free-photo/green-park-view_1417-1492.jpg?w=1380&t=st=1680853998~exp=1680854598~hmac=7132b8b2baa727a19cd5a1f49c3f46abb845ed20a2121f30829de12d933828c1",
       "description": "This is the description of todo group 2"
     }
   ],
   "todos": [
-    { "id": "bb", "titile": "Todo 1", "completed": false, "groupId": 1 },
-    { "id": "cc", "titile": "Todo 2", "completed": true, "groupId": 1 },
-    { "id": "dd", "titile": "Todo 3", "completed": true, "groupId": 2 }
+    { "id": "bb", "title": "Todo 1", "completed": false, "groupId": 1 },
+    { "id": "cc", "title": "Todo 2", "completed": true, "groupId": 1 },
+    { "id": "dd", "title": "Todo 3", "completed": true, "groupId": 2 }
   ]
 }
