@@ -27,6 +27,11 @@ const Layout = ({ children }) => {
                 color: "inherit",
               },
             },
+            ul: {
+              listStyle: "none",
+              marginBlock: 0,
+              paddingInline: 0,
+            },
           }}
         />
         <Navbar />

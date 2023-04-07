@@ -1,11 +1,13 @@
-import axios from "axios";
+import axiosBase from "axios";
 
-export const getTodoGroups = () =>
-  axios.get("http://localhost:3001/todo-groups");
+const axios = axiosBase.create({ baseURL: "http://localhost:3001" });
+
+export const getTodoGroups = () => axios.get("/todo-groups");
+
 export const getTodoGroupDetails = (id) =>
   Promise.all([
-    axios.get(`http://localhost:3001/todo-groups/${id}`),
-    axios.get(`http://localhost:3001/todos?groupId=${id}`),
+    axios.get(`/todo-groups/${id}`),
+    axios.get(`/todos?groupId=${id}`),
   ]).then((res) => {
     const [todoGroupDetails, todos] = res.map((r) => r.data);
     return { ...todoGroupDetails, todos };
@@ -21,3 +23,7 @@ export const getTodoGroupDetails = (id) =>
  * ]
  * }
  */
+
+// Read more about axios interceptors
+
+// axios.interceptors.request.use()
