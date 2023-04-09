@@ -13,7 +13,6 @@ export default function Home() {
       .then((json) => {
         setIsLoading(false);
         setProducts(json);
-        console.log(json);
       });
   }, []);
   if (isLoading) return <p>Lodading...</p>;
