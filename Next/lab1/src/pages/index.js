@@ -61,7 +61,7 @@ export default function Home(props) {
             <div className={style.buttons}>
               <button
                 className={style.deleteButton}
-                // onClick={() => handleDelete(todo.id)}
+                onClick={() => handleDelete(todo.id)}
               >
                 Delete
               </button>
