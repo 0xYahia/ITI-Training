@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import fs from "fs/promises";
 import path from "path";
+
 export async function getStaticProps() {
   console.log("Generating...");
   const filePath = path.join(process.cwd(), "data", "dummy-data.json");
