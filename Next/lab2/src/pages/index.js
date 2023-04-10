@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "@/styles/Home.module.css";
 
 export default function Home() {
-  const [products, setProducts] = useState();
+  const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     setIsLoading(true);
@@ -13,14 +13,13 @@ export default function Home() {
       .then((json) => {
         setIsLoading(false);
         setProducts(json);
-        console.log(json);
       });
   }, []);
   if (isLoading) return <p>Lodading...</p>;
   return (
     <>
       <section className={styles.products}>
-        {products?.map((product) => (
+        {products.map((product) => (
           <div key={product.id} className={styles.product}>
             <h3 className={styles.title}>{product.title}</h3>
             <Link href={`/${product.id}`}>
