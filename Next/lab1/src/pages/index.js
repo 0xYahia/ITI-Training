@@ -1,7 +1,7 @@
 import path from "path";
 import Link from "next/link";
 import style from "../styles/Home.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import fs from "fs/promises";
 
 export async function getStaticProps() {
@@ -23,16 +23,26 @@ export async function getStaticProps() {
 }
 export default function Home(props) {
   const { todos } = props;
-  const [items, setItems] = useState(todos);
+  const [items, setItems] = useState([]);
 
-  // const handleDelete = async (id) => {
-  //   const updatedItems = items.filter((item) => item.id !== id);
-  //   setItems(updatedItems);
-  //   const data = { todos: updatedItems };
-  //   const dataJson = JSON.stringify(data);
-  //   const filePath = path.join(process.cwd(), "data", "db.json");
-  //   await fs.writeFile(filePath, dataJson);
-  // };
+  useEffect(() => {
+    async function fetchItems() {
+      const response = await fetch(`http://localhost:3001/todos`);
+      const data = await response.json();
+      setItems(data);
+    }
+    fetchItems();
+  }, []);
+
+  let newItems;
+  let handleDelete = (id) => {
+    fetch(`http://localhost:3001/todos/${id}`, { method: "delete" })
+      .then((res) => res.json())
+      .then((json) => {
+        newItems = items.filter((item) => item.id !== +json.id);
+      });
+    setItems(newItems);
+  };
 
   // const handleEdit = async (id, newTitle) => {
   //   const updatedItems = items.map((item) => {
