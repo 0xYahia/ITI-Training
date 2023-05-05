@@ -1,17 +1,10 @@
 <template>
-  <h1>App</h1>
-  <allUsers />
-  <userDetails />
-  <errorPage />
+  <navBar v-if="!$route.meta.hideNavbar" />
+  <router-view></router-view>
 </template>
 
 <script setup>
-import errorPage from "./components/pages/errorPage.vue";
-import allUsers from "./components/pages/allUsers.vue";
-import userDetails from "./components/pages/userDetails.vue";
-components: {
-  errorPage, allUsers, userDetails;
-}
+import navBar from "./components/navbar.vue";
 </script>
 
 <style scoped></style>
