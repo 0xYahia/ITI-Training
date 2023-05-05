@@ -1,9 +1,9 @@
 <template>
   <h1>Home</h1>
-  <button @click="showHome">Home</button>
-  <button @click="showAdmin">Admins</button>
-  <button @click="showUser">Users</button>
-  <form @submit.prevent="addAdminOrUser" v-if="homeForm">
+  <button @click="active = 'home'">Home</button>
+  <button @click="active = 'adminC'">Admins</button>
+  <button @click="active = 'userC'">Users</button>
+  <form @submit.prevent="addAdminOrUser" v-if="active === 'home'">
     <input v-model="name" type="text" placeholder="Name" />
     <input v-model="age" type="number" placeholder="Age" />
     <input v-model="address" type="text" placeholder="Address" />
@@ -16,8 +16,12 @@
       <input type="submit" value="Submit" />
     </div>
   </form>
-  <adminC :admins="admins" @deleteAdmin="deleteAdmin" v-if="adminForm" />
-  <userC :users="users" @deleteUser="deleteUser" v-if="userForm" />
+  <adminC
+    :admins="admins"
+    @deleteAdmin="deleteAdmin"
+    v-if="active === 'adminC'"
+  />
+  <userC :users="users" @deleteUser="deleteUser" v-if="active === 'userC'" />
 </template>
 
 <script>
@@ -38,9 +42,7 @@ export default {
       admins: [],
       users: [],
       role: "user",
-      homeForm: true,
-      adminForm: false,
-      userForm: false,
+      active: "home",
     };
   },
   methods: {
@@ -51,34 +53,17 @@ export default {
           age: this.age,
           address: this.address,
         });
-        this.showAdmin();
       } else if (this.role === "user") {
         this.users.push({
           name: this.name,
           age: this.age,
           address: this.address,
         });
-        this.showUser();
       }
       this.name = "";
       this.age = 0;
       this.address = "";
       this.role = "user";
-    },
-    showHome() {
-      this.homeForm = true;
-      this.adminForm = false;
-      this.userForm = false;
-    },
-    showAdmin() {
-      this.homeForm = false;
-      this.adminForm = true;
-      this.userForm = false;
-    },
-    showUser() {
-      this.homeForm = false;
-      this.adminForm = false;
-      this.userForm = true;
     },
     deleteAdmin(admin) {
       this.admins = this.admins.filter((a) => a !== admin);
