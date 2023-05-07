@@ -26,9 +26,9 @@
           </button>
         </td>
         <td>
-          <button @click="updateUser(user.id)" class="btn btn-info btn-sm">
+          <router-link :to="`/edit/${user.id}`" class="btn btn-info btn-sm">
             Update
-          </button>
+          </router-link>
         </td>
       </tr>
     </tbody>

@@ -10,14 +10,8 @@
         </router-link>
       </li>
       <li>
-        <router-link class="link-light text-decoration-none" to="/asd">
-          Error
-        </router-link>
-      </li>
-
-      <li>
-        <router-link class="link-light text-decoration-none" to="/users/5">
-          User Details
+        <router-link class="link-light text-decoration-none" to="/add">
+          Add User
         </router-link>
       </li>
     </ul>
