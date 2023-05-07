@@ -1,37 +1,85 @@
 <template>
-  <table class="table">
-    <thead>
+  <table class="table table-striped table-bordered">
+    <thead class="thead-dark">
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+        <th scope="col">ID</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">See More</th>
+        <th scope="col">Delete</th>
+        <th scope="col">Update</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
+      <tr v-for="user in users" :key="user.id">
+        <td>{{ user.id }}</td>
+        <td>{{ user.first_name }}</td>
+        <td>{{ user.last_name }}</td>
+        <td>
+          <router-link class="btn btn-primary btn-sm" :to="`/users/${user.id}`"
+            >User Details</router-link
+          >
+        </td>
+        <td>
+          <button @click="deleteUser(user.id)" class="btn btn-danger btn-sm">
+            Delete
+          </button>
+        </td>
+        <td>
+          <button @click="updateUser(user.id)" class="btn btn-info btn-sm">
+            Update
+          </button>
+        </td>
       </tr>
     </tbody>
   </table>
 </template>
 
 <script>
-export default {};
+import axios from "axios";
+export default {
+  name: "allUsers",
+  data() {
+    return {
+      users: [],
+    };
+  },
+  created() {
+    this.getAllUsers();
+  },
+  methods: {
+    getAllUsers() {
+      axios
+        .get("http://localhost:3000/users")
+        .then((res) => {
+          this.users = res.data;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+    deleteUser(id) {
+      axios
+        .delete(`http://localhost:3000/users/${id}`)
+        .then((res) => {
+          this.getAllUsers();
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+    updatUser(id) {
+      axios
+        .patch(`http://localhost:3000/users/${id}`)
+        .then((res) => {
+          this.getAllUsers();
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+  },
+};
 </script>
 
 <style scoped></style>

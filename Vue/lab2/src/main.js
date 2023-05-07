@@ -1,12 +1,12 @@
 import { createApp } from "vue";
 import { createWebHistory, createRouter } from "vue-router";
 import App from "./App.vue";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+
 import allUsers from "./components/pages/allUsers.vue";
 import userDetails from "./components/pages/userDetails.vue";
 import errorPage from "./components/pages/errorPage.vue";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-import "./style.css";
 
 const routes = [
   { path: "/", component: allUsers, alias: "/users" },
