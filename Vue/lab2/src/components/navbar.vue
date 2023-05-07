@@ -1,30 +1,27 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul
-          class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center"
-        >
-          <li class="nav-item">
-            <router-link to="/" class="nav-link active" aria-current="page">
-              All Users</router-link
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <header className="bg-dark d-flex justify-content-between p-2">
+    <h3 className="text-light pt-1">Navbar</h3>
+    <ul
+      className="d-flex pt-2 bg-dark justify-content-center gap-5 list-unstyled me-5 "
+    >
+      <li>
+        <router-link class="link-light text-decoration-none" to="/">
+          All Users
+        </router-link>
+      </li>
+      <li>
+        <router-link class="link-light text-decoration-none" to="/asd">
+          Error
+        </router-link>
+      </li>
+
+      <li>
+        <router-link class="link-light text-decoration-none" to="/users/5">
+          User Details
+        </router-link>
+      </li>
+    </ul>
+  </header>
 </template>
 
 <script>
