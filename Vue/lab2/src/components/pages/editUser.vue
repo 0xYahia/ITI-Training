@@ -5,6 +5,7 @@
         <label for="first_name">First Name</label>
         <input
           v-model="formData.first_name"
+          v-bind:key="formData.first_name"
           type="text"
           class="form-control"
           id="first_name"
@@ -15,6 +16,7 @@
         <label for="last_name">Last Name</label>
         <input
           v-model="formData.last_name"
+          v-bind:key="formData.last_name"
           type="text"
           class="form-control"
           id="last_name"
@@ -25,6 +27,7 @@
         <label for="email">Email address</label>
         <input
           v-model="formData.email"
+          v-bind:key="formData.email"
           type="email"
           class="form-control"
           id="email"
@@ -36,6 +39,7 @@
         <div class="form-check">
           <input
             v-model="formData.gender"
+            v-bind:key="formData.gender + '_male'"
             class="form-check-input"
             type="radio"
             name="gender"
@@ -47,6 +51,7 @@
         <div class="form-check">
           <input
             v-model="formData.gender"
+            v-bind:key="formData.gender + '_female'"
             class="form-check-input"
             type="radio"
             name="gender"
